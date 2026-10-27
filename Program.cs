@@ -60,3 +60,97 @@
 //     Console.WriteLine(slot);
 // }
 
+// Console.Write("Введите N: ");
+// int n = int.Parse(Console.ReadLine());
+// int[] squares = new int[n];
+
+// for (int i = 0; i < n; i++) {
+//     squares[i] = (i + 1) * (i + 1);
+// }
+
+// foreach (int num in squares) {
+//     Console.WriteLine(num);
+// }
+
+
+// int[] numbers = { -5, 3, -2, 8, -1, 0, 4 };
+// Console.WriteLine("Исходный массив:");
+// foreach (int num in numbers)
+// {
+//     Console.Write($"{num} ");
+// }
+// Console.WriteLine();
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     if (numbers[i] < 0)
+//     {
+//         numbers[i] = 0;
+//     }
+// }
+// Console.WriteLine("Массив после замены:");
+// foreach (int num in numbers)
+// {
+//     Console.Write($"{num} ");
+// }
+
+// Console.Write("Введите свою фамилию: ");
+// string surname = Console.ReadLine()!.Trim();
+// if (string.IsNullOrEmpty(surname)) {
+// Console.WriteLine("Фамилия не введена. Завершение работы.");
+// return;
+// }
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
+// var assigned = Enumerable.Range(1, 10)
+// .OrderBy(_ => rnd.Next())
+// .Take(2)
+// .OrderBy(x => x)
+// .ToList();
+// Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+
+// Console.Write("Введите размер массива: ");
+// int size = int.Parse(Console.ReadLine());
+// int[] numbers = new int[size];
+
+// Console.WriteLine("Введите элементы массива:");
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     Console.Write($"Элемент {i + 1}: ");
+//     numbers[i] = int.Parse(Console.ReadLine());
+// }
+
+// int sum = 0;
+// foreach (int num in numbers)
+// {
+//     sum += num;
+// }
+
+// Console.WriteLine("\nВведённые числа:");
+// foreach (int num in numbers)
+// {
+//     Console.Write($"{num} ");
+// }
+
+// Console.WriteLine($"\n\nСумма всех чисел: {sum}");
+
+
+// int[] numbers = { 5, 9, 12, 7, 3, 8, 15 };
+
+// Console.WriteLine("Исходный массив:");
+// foreach (int num in numbers)
+// {
+//     Console.Write($"{num} ");
+// }
+
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     if (numbers[i] % 3 == 0)
+//     {
+//         numbers[i] = -1;
+//     }
+// }
+
+// Console.WriteLine("\n\nМассив после замены:");
+// foreach (int num in numbers)
+// {
+//     Console.Write($"{num} ");
+// }
